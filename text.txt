@@ -1,0 +1,8 @@
+gunicorn Tasky.asgi:app -k uvicorn.workers.UvicornWorker
+
+
+uvicorn Tasky.asgi:app --reload
+
+curl https://api.telegram.org/bot7287204087:AAGGP2dgHd3ax0YR2DSOMc9CsLPWD-Y_b10/getWebhookInfo
+
+set PYTHONASYNCIODEBUG=1
